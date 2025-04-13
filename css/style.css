@@ -1,0 +1,1249 @@
+body{
+  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  text-align: center;
+}
+/* ///////////////////////home section css///////////////// */
+.home{
+  width:100%;
+  height:100%;
+  background-image: url(../image/basicbg.jpg); /* Path to the image */
+  background-repeat: no-repeat; /* Prevents repetition */
+  background-size: cover; /* Makes image cover the entire background */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 65px;
+  background-color:#EFE8D8 ; /* بيج شفاف */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  z-index: 1000;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0.8;
+
+}
+
+.logo {
+  height: 65px;
+  width: auto;
+}
+
+.ul1 {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  margin-right: 20px; /* مسافة يمين */
+}
+
+.ul1 li {
+  position: relative;
+}
+
+.ul1 a {
+  color: #cc5f0c; /* برتقالي غامق */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 0;
+  display: inline-block;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.ul1 a i {
+  margin-right: 5px;
+}
+
+.ul1 a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+  background-color: #cc5f0c;
+  transition: width 0.3s ease;
+  border-radius: 10px;
+}
+
+.ul1 a:hover::after {
+  width: 100%;
+}
+.search-box {
+  background-color: white;
+  border-radius: 25px;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  margin-right: auto; /* يحطها قبل الـ ul */
+  margin-left: 20px;
+}
+
+.search-box i {
+  color: #cc5f0c;
+  font-size: 16px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  background: transparent;
+  color: #333;
+}
+.ihome{
+  color: #cc5f0c;
+  font-size: 25px;
+  margin-left: 15px;
+}
+/* Dropdown menu styling */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #EFE8D8;
+  border-radius: 15px;
+  padding: 10px 0;
+  min-width: 180px;
+  top: 40px;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Dropdown links */
+.dropdown-menu li {
+  display: block;
+  text-align: left;
+  padding: 10px 20px;
+}
+
+.dropdown-menu a {
+  color: #cc5f0c;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+/* Underline animation */
+.dropdown-menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #cc5f0c;
+  transition: width 0.3s ease;
+}
+
+.dropdown-menu a:hover::after {
+  width: 100%;
+}
+
+.dropdown-menu a:hover {
+  color: #281302;
+}
+
+
+.content {
+  position: absolute;
+  top: 250px;
+  left: 100px;
+  text-align: center;
+  width: 90%;
+}
+
+/* .div1 {
+  background: rgba(239, 232, 216, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  margin: auto;
+  position: absolute;
+  left: 360px;
+} */
+
+.p1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #cc5f0c;
+}
+span{
+  background-color: #EFE8D8;
+  color: #cc5f0c;
+}
+
+
+.highlight:hover {
+  background-color: #EFE8D8;
+  color: #cc5f0c;
+}
+
+.p2 {
+  font-size: 20px;
+  font-weight: 300;
+  color: #cc5f0c;
+  margin-bottom: 20px;
+}
+
+.btn1, .btn2 {
+  width: 140px;
+  height: 60 px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  transition: 0.3s;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.btn1 {
+  background: #EFE8D8;
+  color: #cc5f0c;
+  position: absolute;
+  top: 150px;
+  /* left: 20px; */
+  right: 552px;
+}
+
+.btn2 {
+  background: #cc5f0c;
+  color: #EFE8D8;
+  position: absolute;
+  top: 150px;
+   left: 512px;
+}
+
+.btn2:hover {
+  background: #f49d5b;
+  color: #eed8c4;
+}
+.btn1:hover{
+  background-color:#eed8c4 ;
+  color:#f49d5b ;
+}
+
+/* .div1:hover {
+  background: rgba(244, 117, 33, 0.3);
+} */
+ /* //////////////////end home section //////////////////// */
+ /*///////////part welcome to joryko////////////////////////////////////////*/
+ .welcome_to_joryko{
+  width: 100%;
+  height: 80%;
+ }
+ .welcome_hero {
+  padding: 50px 0 20px;
+  text-align: center; /* عشان العنوان يكون في المنتصف */
+}
+
+.welcome_hero h1 {
+  font-size: 40px;
+  color: #cc5f0c;
+  margin-bottom: 10px;
+}
+
+.welcome_underline {
+  width: 80px;
+  height: 4px;
+  background-color: #cc5f0c;
+  margin: 0 auto 40px;
+  border-radius: 2px;
+}
+
+.welcome_cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px; /* تقليل المسافة بين الكروت */
+  padding: 0 20px 50px;
+}
+
+.welcome_card {
+  width: 250px;
+  height: 190px; /* تعديل: توحيد ارتفاع الكروت */
+  padding: 30px 20px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: 1px solid #cc5f0c;
+  border-radius: 10px;
+  background-color: #fff; /* مهم للحفاظ على اللون داخل الهوفر */
+  box-shadow: 0 4px 8px rgba(204, 95, 12, 0.2);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.welcome_card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(177, 85, 14, 0.4);
+  transform: scale(0);
+  transform-origin: top left;
+  transition: transform 0.4s ease;
+  z-index: -1;
+}
+
+.welcome_card:hover::before {
+  transform: scale(1);
+}
+
+.welcome_card:hover h2 {
+  color: #fff !important;
+}
+.welcome_card:hover p{
+  color: #cc5f0c;
+}
+.welcome_card:hover a {
+  color: #0b0b0b;
+}
+
+.welcome_icon {
+  font-size: 40px;
+  color: #cc5f0c;
+  margin-bottom: 15px;
+  transition: color 0.3s;
+}
+
+.welcome_card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #000;
+  transition: color 0.3s;
+}
+
+.welcome_card p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 20px;
+  transition: color 0.3s;
+}
+
+.welcome_card a {
+  text-decoration: none;
+  color: #cc5f0c;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+
+
+/*////////////////////////end welcome to joryko////////////////////*/
+/* /////////////////////////featured_works////////////////////////////////////////// */
+.featured_works {
+  width: 100%;
+  height: 100%;
+  background-color: #EFE8D8;
+}
+
+.gallery-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 40px;
+  color: #cc5f0c; /* لون العنوان */
+  margin-bottom: 10px;
+}
+
+.featured_underline {
+  width: 80px;
+  height: 4px;
+  background-color: #cc5f0c; /* خط تحت العنوان */
+  margin: 0 auto 40px;
+  border-radius: 2px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 200px); /* 3 أعمدة بنفس حجم الكارت الجديد */
+  gap: 80px; /* مسافة مناسبة بين الكروت */
+  justify-content: center;
+
+} 
+
+.featured_card {
+  position: relative;
+  width: 260px; /* أكبر من 160px */
+  height: 200px; /* أكبر من 100px */
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(204, 95, 12, 0.15);
+  transition: transform 0.3s ease;
+  background-color: #fbe3d1;
+}
+
+
+
+
+.featured_card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured_card:hover {
+  transform: scale(1.02);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(204, 95, 12, 0.4); /* هوفر أفتح */
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured_card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.overlay p {
+  margin: 5px 0;
+  font-size: 12px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.featured_icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.featured_icons i {
+  font-size: 14px;
+  background-color: #fff;
+  color: #cc5f0c;
+  padding: 6px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.featured_icons i:hover {
+  background-color: #cc5f0c;
+  color: #fff;
+  transform: scale(1.2);
+}
+/* ///////////////////////end featured_work section////////////////////////////// */
+/* /////////////////////////////what_we_offer//////////////////////////////////////////////////////// */
+.what_we_offer{
+  height: 100%;
+  width: 100%;
+}
+
+.offer-section {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fff;
+}
+
+.offer-section h2 {
+  font-size: 40px;
+  color: #cc5f0c; /* لون العنوان */
+  margin-bottom: 10px;
+}
+
+.offer-underline {
+  width: 80px;
+  height: 4px;
+  background-color: #cc5f0c; /* خط تحت العنوان */
+  margin: 0 auto 40px;
+  border-radius: 2px;
+}
+
+.offer-cards {
+
+
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 0 20px 50px;
+  margin-left: 230px;
+  margin-right: 200px;
+}
+
+.offer-card {
+  width: 230px;
+  
+  height:130px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: 1px solid #cc5f0c;
+  border-radius: 12px;
+  padding: 30px;
+  background-color: white;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column; /* تعديل الترتيب ليكون عمودي */
+  align-items: flex-start; /* الأيقونة والنص على اليسار */
+  gap: 10px;
+}
+
+.offer-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:  rgba(177, 85, 14, 0.4); /* هوفر أفتح */ /* أغمق في الهوفر */
+  transform: scale(0);
+  transform-origin: top left;
+  transition: transform 0.4s ease;
+  z-index: -1;
+}
+
+.offer-card:hover::before {
+  transform: scale(1);
+}
+
+.offer-card:hover h3
+ {
+  color: #cc5f0c; /* النص الرئيسي و الأيقونة */
+}
+
+.offer-card:hover p {
+  color: #0c0c0c; /* النص الثانوي */
+}
+
+/* شكل الأيقونة بدون دائرة */
+.icon-circle {
+  position: absolute;
+  top: 10px; /* وضع الأيقونة في الزاوية العلوية اليسرى */
+  left: 10px;
+  background: none;
+  color: #cc5f0c; /* نفس لون خلفية الهوفر لكن أفتح */
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+/* الهيدر الرئيسي */
+.offer-card h3 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: bold;
+  color: #0b0b0b; /* نفس لون الأيقونة */
+  transition: color 0.3s;
+}
+
+/* النص الفرعي */
+.offer-card p {
+  font-size: 14px;
+  color: #cc5f0c;
+  transition: color 0.3s;
+}
+
+
+/* ////////////////////////////////////////end what_we_offer//////////////////////////// */
+/* //////////////////////////////////////////////////////////////why_chose_us///////////////////////////// */
+.why_choose_us{
+  width: 100%;
+  height: 60%;
+  
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 10px; /* تقليل المسافة بين النص والصورة */
+  background-color: #fff;
+}
+
+.text-content {
+  text-align: center;
+  width: 30%;
+  margin-left: 170px; /* تقليص المسافة بين النص والصورة */
+}
+.us_underline{
+  width: 80px;
+  height: 4px;
+  background-color: #cc5f0c; /* خط تحت العنوان */
+  margin: 0 auto 40px;
+  border-radius: 2px;
+}
+
+.text-content h1 {
+  font-size: 40px;
+  color: #cc5f0c; /* لون العنوان */
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  color: #cc5f0c;
+  margin-bottom: 20px;
+}
+
+.text-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.text-content ul li {
+  margin-bottom: 10px;
+  color: #cc5f0c;
+}
+
+/* .text-content ul li::before {
+  content: '✓';
+  color: #cc5f0c;
+  margin-right: 10px;
+} */
+
+.image-content {
+  width: 30%;
+  height: 30%;
+  padding: 20px;
+  margin-right: 140px; /* تقليص المسافة بين النص والصورة */
+  position: relative;
+}
+
+.image-content img {
+  width: 75%;
+  height: 65%;
+  border-radius: 10px;
+}
+.cls {
+  display: flex;
+  justify-content: center; /* لجعل الدوائر تتراص في المنتصف */
+  gap: 5px; /* تقليل المسافة بين الدوائر */
+  position: absolute;
+  bottom: -15px; /* وضع الدوائر أسفل الصورة مباشرة */
+  left: 50%;
+  transform: translateX(-50%); /* لضبط الموضع المركزي */
+}
+
+.cl1 {
+  width: 12px; /* عرض الدائرة الأصغر */
+  height: 12px; /* ارتفاع الدائرة الأصغر */
+  border-radius: 50%; /* يجعلها دائرية */
+  background-color: #cc5f0c; /* لون الدائرة */
+}
+
+.cl2 {
+  width: 12px; /* عرض الدائرة الأصغر */
+  height: 12px; /* ارتفاع الدائرة الأصغر */
+  border-radius: 50%; /* يجعلها دائرية */
+  background-color: #372f28; /* لون الدائرة */
+}
+
+.cl2:hover { /* إزالة المسافة بين .cl2 و :hover */
+  background-color: #cc5f0c; /* تغيير اللون عند المرور */
+}
+
+
+
+/* ///////////////////////////////////////end why_we_chose_us/////////////////////////////////// */
+/* ////////////////////////////////////image_scroled1//////////////////////////////////////////////////////////////// */
+.image_scroled1{
+  width: 100%;
+  height: 50%;
+  border: 2px solid #F5E1C8;
+  background-image: url(../image/scrolled1.jpg);
+  background-size: 100% 100%; /* تناسب الصورة تمامًا مع div */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* تتحرك الصورة داخل div عند التمرير */
+  overflow: auto; /* يسمح بالتمرير داخل div */
+  margin: 250px auto;
+  border-radius: 20px;
+  font-family: Arial, sans-serif;
+  align-items: center;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 180px;
+}
+
+.achievement {
+  text-align: center;
+  background: rgba(255, 255, 255,0); /* خلفية شفافة */
+  padding: 20px;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.achievement i {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #cc5f0c;
+}
+
+.achievement p {
+  margin: 0;
+  font-size: 18px;
+  color: #cc5f0c;
+}
+/* ////////////////////////////////////end .image_scroled1//////////////////// */
+/* //////////////////////////////////////////////////////pricing taple////////////////////////////////// */
+.pricing_table{
+  width: 100%;
+  height: 80%;
+}
+.pricing_title {
+  font-size: 40px;
+  color: #cc5f0c; /* لون العنوان */
+  margin-bottom: 10px;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.pricing-box {
+  background: #fff;
+  border: 2px solid #cc5f0c;
+  border-radius: 20px;
+  padding: 30px;
+  width: 300px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-box::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:  rgba(204, 95, 12, 0.4); /* #cc5f0c مع شفافية */
+  transition: top 0.4s ease;
+  z-index: 0;
+}
+
+
+.pricing-box:hover::before {
+  top: 0;
+}
+
+.pricing-box:hover h2,
+.pricing-box:hover .price,
+.pricing-box:hover ul li {
+  color: #cc5f0c;
+}
+
+.pricing-box:hover button {
+  background-color: #f79245;
+}
+
+.pricing-box h2 {
+  margin-bottom: 10px;
+  font-size: 1.4em;
+  color: #333;
+  position: relative;
+  z-index: 1;
+}
+
+.price {
+  font-size: 2em;
+  color: #cc5f0c;
+  margin: 20px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.price span {
+  font-size: 0.6em;
+  color: #777;
+}
+
+.pricing-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.pricing-box ul li {
+  margin: 10px 0;
+  color: #444;
+  font-weight: bold;
+}
+
+.pricing-box button {
+  padding: 10px 20px;
+  background: #cc5f0c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.circle-img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #cc5f0c;
+  position: relative;
+  z-index: 1;
+}
+
+.circle-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.price_underline{
+  width: 80px;
+  height: 4px;
+  background-color: #cc5f0c; /* خط تحت العنوان */
+  margin: 0 auto 40px;
+  border-radius: 2px;
+}
+/* ////////////////////////////////END PRICE TAPLE///////////////////////// */
+/* ////////////////////////////////////////////////image_scroled2////////////////////////////////// */
+.team1-section {
+  width: 100%;
+  height: 50%;
+  border: 2px solid #F5E1C8;
+  background-image: url(../image/test.jpg);
+  background-size: 100% 100%; /* تناسب الصورة تمامًا مع div */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* تتحرك الصورة داخل div عند التمرير */
+  overflow: auto; /* يسمح بالتمرير داخل div */
+  margin: 250px auto;
+  border-radius: 20px;
+  font-family: Arial, sans-serif;
+  align-items: center;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.team1-card {
+  background-color: rgba(0, 0, 0, 0); /* Optional dark overlay */
+  padding: 30px 20px;
+  border-radius: 15px;
+  width: 300px;
+  color: #bd6725;
+}
+
+.team1-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* border: 3px solid #cc5f0c; */
+  margin-bottom: 15px;
+}
+
+.team1-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.team1-info h2 {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #bd6725;
+}
+
+.team1-info h4 {
+  margin: 5px 0 0;
+  color: #cc5f0c;
+  font-weight: bold;
+}
+
+
+.team1-card p {
+  margin-top: 10px;
+  font-size: 0.95em;
+  font-weight: bold;
+  color: #0e0e0e;
+}
+/* ///////////////////////////////end image scrolled2////////////////// */
+/* ////////////////////////////////////////////////////////////our_team////////////////////////////////// */
+.our_team {
+  text-align: center;
+  /* padding: 50px 0; */
+  width: 100%;
+  height: 100%;
+}
+
+.pricing_title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.price_underline {
+  width: 60px;
+  height: 4px;
+  background-color: #cc5f0c;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.our_team_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 0 180px; 
+  box-sizing: border-box; 
+  
+}
+
+
+.our_team_card {
+  position: relative;
+  width: 300px; 
+  background-color: #EFE8D8;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+}
+
+
+.our_team_card::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(204, 95, 12, 0.4);
+  /* color: white; */
+  transition: top 0.4s ease;
+  z-index: 2;
+}
+
+.our_team_card:hover::before {
+  top: 0;
+}
+
+.our_team_card * {
+  position: relative;
+  z-index: 1;
+}
+
+.our_team_img_container {
+  position: relative;
+  z-index: 1;
+}
+
+.our_team_img_container img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+
+.social-icons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #a84300; 
+  padding: 10px;
+  border-radius: 5px;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+.our_team_card:hover .social-icons {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.our_team_overlay {
+  display: none;
+}
+
+/* .our_team_card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+} */
+.our_team_card:hover   h3{
+  color: #523017 ;
+}
+.our_team_card:hover   .role{
+  color: #cc5f0c;
+}
+.our_team_card h3 {
+  margin-top: 15px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #cc5f0c;
+}
+/* .our_team_card h3 :hover{
+  color:#f4d5bd ;
+} */
+
+.role {
+  font-size: 16px;
+  color: #523017;
+}
+/* //////////////////////////////////////end our_team///////////////////// */
+/* ///////////////////////////////////////////////////recent_news///////////////////////////////// */
+.recent_news {
+  width: 100%;
+  padding: 170px 0;
+  height: 75%;
+}
+
+.recent_news_title {
+  font-size: 32px;
+  font-weight: bold;
+  color:#cc5f0c ;
+  margin-bottom: 30px;
+  position: relative;
+  text-align: center;
+}
+
+.recent_news_title::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background: #cc5f0c;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.news-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px; /* Increased gap between the cards */
+  flex-wrap: wrap;
+  padding: 0 40px;
+}
+
+.recent_news_card {
+  position: relative;
+  width: 340px; /* Increased width to make the cards bigger */
+  height: 450px;
+  border-radius: 10px;
+  border: 2px solid #cc5f0c;
+  overflow: hidden;
+  background-color: #EFE8D8;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  /* transition: box-shadow 0.3s ease; */
+}
+
+/* Hover effect for the card */
+/* .recent_news_card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+} */
+
+.recent_news_card::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(204, 95, 12, 0.4); /* Orange color overlay */
+  transition: top 0.4s ease;
+  z-index: 0;
+}
+
+.recent_news_card:hover::before {
+  top: 0; /* Move the overlay down when hovering */
+}
+
+.recent_news_img_container {
+  width: 95%;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2; /* أعلى من الـ ::before */
+}
+
+.recent_news_img_container img {
+  margin: auto;
+  margin-top: 20px;
+  width: 90%;
+  height: 100%; /* Set a fixed height for the image */
+  object-fit: cover; /* Ensure the image covers the space without distortion */
+  display: block;
+}
+
+.recent_news_info {
+  padding: 15px;
+  text-align:center;
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+  margin-top: 30px;
+
+}
+
+.recent_news_info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #281302;
+}
+.recent_news_info:hover p{
+  color:#cc5f0c ;
+}
+.recent_news_info h3 {
+  margin: 10px 0 5px;
+  font-weight: bold;
+  font-size: 18px;
+  color:#cc5f0c ;
+}
+.recent_news_info:hover h3{
+   color:#281302;
+}
+
+.recent_news_info a {
+  display: inline-block;
+  color: #cc5f0c;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.recent_news_info:hover a {
+  color: #281302;
+}
+
+.recent_news_info i {
+  color: #cc5f0c;
+  margin-right: 5px;
+}
+/* //////////////////////////////////end recent_news//////////////////////////////////////////// */
+.the_happy_end_container {
+  width: 100%;
+  height: 50%;
+  background-color:#EFE8D8;
+}
+
+.the_happy_end_main-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+
+
+.the_happy_end_social-icons {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center; /* توسيط الأيقونات */
+  gap: 10px; /* تقليل المسافة بين الأيقونات */
+}
+
+
+.the_happy_end_social-icons a {
+  margin: 0 5px; /* إضافة مسافة صغيرة بين الأيقونات */
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f09a58;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: background 0.3s;
+}
+
+.the_happy_end_social-icons a:hover {
+  background-color: #cc5f0c;
+}
+.the_happy_end_social-icons i{
+  text-align: center;
+}
+
+footer p {
+  color: #555;
+  font-size: 14px;
+}
