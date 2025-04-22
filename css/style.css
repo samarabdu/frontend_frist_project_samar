@@ -1,6 +1,9 @@
 body{
   font-family: Arial, sans-serif;
   font-family: 'Arial', sans-serif;
+  font-family: "Public Sans", sans-serif;
+  /* font-optical-sizing: auto;
+  font-style: normal; */
   margin: 0;
   padding: 0;
   background-color: white;
@@ -10,7 +13,8 @@ body{
 .home{
   width:100%;
   height:100%;
-  background-image: url(../image/basicbg.jpg); /* Path to the image */
+  /* background-color:#EFE8D8; */
+  background-image: url(../image/final3.jpg); /* Path to the image */
   background-repeat: no-repeat; /* Prevents repetition */
   background-size: cover; /* Makes image cover the entire background */
   background-position: center; /* Centers the image */
@@ -174,7 +178,8 @@ body{
 
 .content {
   position: absolute;
-  top: 250px;
+  font-family: "Public Sans", sans-serif;
+  top: 210px;
   left: 100px;
   text-align: center;
   width: 90%;
@@ -191,7 +196,7 @@ body{
 } */
 
 .p1 {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -200,6 +205,9 @@ body{
 span{
   background-color: #EFE8D8;
   color: #cc5f0c;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 
@@ -209,19 +217,19 @@ span{
 }
 
 .p2 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 300;
   color: #cc5f0c;
   margin-bottom: 20px;
 }
 
 .btn1, .btn2 {
-  width: 140px;
-  height: 60 px;
+  width: 160px;
+  height: 80 px;
   padding: 12px 20px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
-  border: none;
+  border:1px  #cc5f0c  solid;
   transition: 0.3s;
   border-radius: 10px;
   margin: 10px;
@@ -231,17 +239,17 @@ span{
   background: #EFE8D8;
   color: #cc5f0c;
   position: absolute;
-  top: 150px;
+  top: 230px;
   /* left: 20px; */
-  right: 552px;
+  right: 532px;
 }
 
 .btn2 {
   background: #cc5f0c;
   color: #EFE8D8;
   position: absolute;
-  top: 150px;
-   left: 512px;
+  top: 230px;
+   left: 492px;
 }
 
 .btn2:hover {
@@ -263,7 +271,7 @@ span{
   height: 80%;
  }
  .welcome_hero {
-  padding: 50px 0 20px;
+  padding: 40px 0 20px;
   text-align: center; /* عشان العنوان يكون في المنتصف */
 }
 
@@ -271,6 +279,9 @@ span{
   font-size: 40px;
   color: #cc5f0c;
   margin-bottom: 10px;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .welcome_underline {
@@ -287,6 +298,7 @@ span{
   flex-wrap: wrap;
   gap: 30px; /* تقليل المسافة بين الكروت */
   padding: 0 20px 50px;
+  margin-left:30px;
 }
 
 .welcome_card {
@@ -333,7 +345,7 @@ span{
   color: #cc5f0c;
 }
 .welcome_card:hover a {
-  color: #0b0b0b;
+  color: #523017;
 }
 
 .welcome_icon {
@@ -346,13 +358,13 @@ span{
 .welcome_card h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: #000;
+  color: #523017;
   transition: color 0.3s;
 }
 
 .welcome_card p {
   font-size: 14px;
-  color: #444;
+  color: #513f31;
   margin-bottom: 20px;
   transition: color 0.3s;
 }
@@ -372,39 +384,46 @@ span{
   width: 100%;
   height: 100%;
   background-color: #EFE8D8;
+  align-items: center;
+
 }
 
 .gallery-section {
-  padding: 50px 20px;
+  padding: 40px 20px;
   text-align: center;
 }
 
 .gallery-section h2 {
   font-size: 40px;
   color: #cc5f0c; /* لون العنوان */
-  margin-bottom: 10px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .featured_underline {
   width: 80px;
   height: 4px;
   background-color: #cc5f0c; /* خط تحت العنوان */
-  margin: 0 auto 40px;
+  margin: 0 auto 30px;
   border-radius: 2px;
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 200px); /* 3 أعمدة بنفس حجم الكارت الجديد */
+  grid-template-columns: repeat(3, 240px); /* 3 أعمدة بنفس حجم الكارت الجديد */
   gap: 80px; /* مسافة مناسبة بين الكروت */
   justify-content: center;
+  margin-right: 30px;
 
 } 
 
 .featured_card {
   position: relative;
-  width: 260px; /* أكبر من 160px */
-  height: 200px; /* أكبر من 100px */
+  width: 280px; /* أكبر من 160px */
+  height: 220px; /* أكبر من 100px */
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(204, 95, 12, 0.15);
@@ -447,14 +466,14 @@ span{
 
 .overlay h3 {
   margin: 0;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .overlay p {
   margin: 5px 0;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: bold;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
@@ -485,10 +504,12 @@ span{
 .what_we_offer{
   height: 100%;
   width: 100%;
+  /* background-color: #333; */
+  
 }
 
 .offer-section {
-  text-align: center;
+  /* text-align: center; */
   padding: 40px 20px;
   background: #fff;
 }
@@ -497,6 +518,9 @@ span{
   font-size: 40px;
   color: #cc5f0c; /* لون العنوان */
   margin-bottom: 10px;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .offer-underline {
@@ -508,16 +532,22 @@ span{
 }
 
 .offer-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  /* margin: 0 auto; */
+  /* margin: auto;   */
+  margin-left: 250px;
+  margin-right: 200px;
 
-
-
-  display: flex;
+  /* display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
   padding: 0 20px 50px;
   margin-left: 230px;
-  margin-right: 200px;
+  margin-right: 200px; */
 }
 
 .offer-card {
@@ -535,7 +565,8 @@ span{
   display: flex;
   flex-direction: column; /* تعديل الترتيب ليكون عمودي */
   align-items: flex-start; /* الأيقونة والنص على اليسار */
-  gap: 10px;
+  gap: 12px;
+  
 }
 
 .offer-card::before {
@@ -556,40 +587,49 @@ span{
   transform: scale(1);
 }
 
-.offer-card:hover h3
+.offer-card:hover .offer_card-title
  {
   color: #cc5f0c; /* النص الرئيسي و الأيقونة */
 }
 
-.offer-card:hover p {
-  color: #0c0c0c; /* النص الثانوي */
+.offer-card:hover .offer_card-description{
+  color: #523017; /* النص الثانوي */
 }
 
 /* شكل الأيقونة بدون دائرة */
 .icon-circle {
   position: absolute;
-  top: 10px; /* وضع الأيقونة في الزاوية العلوية اليسرى */
+  top: 20px; 
   left: 10px;
   background: none;
   color: #cc5f0c; /* نفس لون خلفية الهوفر لكن أفتح */
   font-size: 24px;
   transition: color 0.3s;
+  margin-bottom: 8px;
+
 }
 
 /* الهيدر الرئيسي */
-.offer-card h3 {
+.offer_card-title {
   font-size: 18px;
-  margin: 0;
+  margin: auto;
   font-weight: bold;
-  color: #0b0b0b; /* نفس لون الأيقونة */
+  color: #523017; /* نفس لون الأيقونة */
   transition: color 0.3s;
+  margin-bottom: 8px;
+  
 }
 
 /* النص الفرعي */
-.offer-card p {
-  font-size: 14px;
+.offer_card-description {
+  margin: auto; 
+   /* font-size: 14px; */
   color: #cc5f0c;
   transition: color 0.3s;
+  font-size: 15px;
+      /* color: #999; */
+      /* font-weight: 600;
+      line-height: 1.5; */
 }
 
 
@@ -597,7 +637,7 @@ span{
 /* //////////////////////////////////////////////////////////////why_chose_us///////////////////////////// */
 .why_choose_us{
   width: 100%;
-  height: 60%;
+  height: 75%;
   
 }
 .container {
@@ -607,25 +647,33 @@ span{
   width: 100%;
   gap: 10px; /* تقليل المسافة بين النص والصورة */
   background-color: #fff;
+  margin-bottom:20px;
+  /* margin-top:20px */
 }
 
 .text-content {
-  text-align: center;
-  width: 30%;
-  margin-left: 170px; /* تقليص المسافة بين النص والصورة */
+  text-align: left;
+  width: 40%;
+  height:50%;
+  margin-left: 190px; /* تقليص المسافة بين النص والصورة */
 }
 .us_underline{
   width: 80px;
   height: 4px;
+  /* text-align: left; */
   background-color: #cc5f0c; /* خط تحت العنوان */
   margin: 0 auto 40px;
   border-radius: 2px;
+  margin-left:9px;
 }
 
 .text-content h1 {
   font-size: 40px;
   color: #cc5f0c; /* لون العنوان */
   margin-bottom: 10px;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .text-content p {
@@ -694,6 +742,11 @@ span{
 
 /* ///////////////////////////////////////end why_we_chose_us/////////////////////////////////// */
 /* ////////////////////////////////////image_scroled1//////////////////////////////////////////////////////////////// */
+.image_contenar{
+  /* width: 100%;
+  height: 0%;
+  margin-bottom:20px; */
+}
 .image_scroled1{
   width: 100%;
   height: 50%;
@@ -704,7 +757,8 @@ span{
   background-repeat: no-repeat;
   background-attachment: fixed; /* تتحرك الصورة داخل div عند التمرير */
   overflow: auto; /* يسمح بالتمرير داخل div */
-  margin: 250px auto;
+  margin: 80px auto;
+
   border-radius: 20px;
   font-family: Arial, sans-serif;
   align-items: center;
@@ -738,11 +792,16 @@ span{
 .pricing_table{
   width: 100%;
   height: 80%;
+  margin-bottom: 10px; 
+
 }
 .pricing_title {
   font-size: 40px;
   color: #cc5f0c; /* لون العنوان */
   margin-bottom: 10px;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .pricing-container {
@@ -795,9 +854,12 @@ span{
 .pricing-box h2 {
   margin-bottom: 10px;
   font-size: 1.4em;
-  color: #333;
+  color: #523017;
   position: relative;
   z-index: 1;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .price {
@@ -810,7 +872,7 @@ span{
 
 .price span {
   font-size: 0.6em;
-  color: #777;
+  color: #523017;
 }
 
 .pricing-box ul {
@@ -823,7 +885,7 @@ span{
 
 .pricing-box ul li {
   margin: 10px 0;
-  color: #444;
+  color: #52331d;
   font-weight: bold;
 }
 
@@ -864,6 +926,10 @@ span{
 }
 /* ////////////////////////////////END PRICE TAPLE///////////////////////// */
 /* ////////////////////////////////////////////////image_scroled2////////////////////////////////// */
+.image_scroled2{
+  width: 100%;
+  /* height: 50%; */
+}
 .team1-section {
   width: 100%;
   height: 50%;
@@ -874,7 +940,8 @@ span{
   background-repeat: no-repeat;
   background-attachment: fixed; /* تتحرك الصورة داخل div عند التمرير */
   overflow: auto; /* يسمح بالتمرير داخل div */
-  margin: 250px auto;
+  margin: 80px auto;
+
   border-radius: 20px;
   font-family: Arial, sans-serif;
   align-items: center;
@@ -882,6 +949,7 @@ span{
     justify-content: center;
     align-items: center;
     gap: 200px;
+    /* margin-top: 20px; */
 }
 
 .team1-card {
@@ -940,6 +1008,9 @@ span{
 .pricing_title {
   font-size: 36px;
   margin-bottom: 20px;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .price_underline {
@@ -1069,8 +1140,9 @@ span{
 /* ///////////////////////////////////////////////////recent_news///////////////////////////////// */
 .recent_news {
   width: 100%;
-  padding: 170px 0;
-  height: 75%;
+  padding: 80px 0;
+
+  height: 80%;
 }
 
 .recent_news_title {
@@ -1080,6 +1152,9 @@ span{
   margin-bottom: 30px;
   position: relative;
   text-align: center;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .recent_news_title::after {
@@ -1165,7 +1240,7 @@ span{
 .recent_news_info p {
   margin: 5px 0;
   font-size: 14px;
-  color: #281302;
+  color: #523017;
 }
 .recent_news_info:hover p{
   color:#cc5f0c ;
@@ -1177,7 +1252,7 @@ span{
   color:#cc5f0c ;
 }
 .recent_news_info:hover h3{
-   color:#281302;
+   color:#523017;
 }
 
 .recent_news_info a {
@@ -1190,7 +1265,7 @@ span{
 }
 
 .recent_news_info:hover a {
-  color: #281302;
+  color: #523017;
 }
 
 .recent_news_info i {
@@ -1244,6 +1319,10 @@ span{
 }
 
 footer p {
-  color: #555;
+  color: #523017;
   font-size: 14px;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
+/* ///////////////////////////////////////the_happy_end/////////////////////////////////////////// */
